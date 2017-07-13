@@ -1,0 +1,749 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jun 28 00:06:53 2017" VIVADOVERSION="2017.1">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="design_1" PACKAGE="csg324" SPEEDGRADE="-3"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="press_1" SIGIS="undef" SIGNAME="External_Ports_press_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="press_0" PORT="press_1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="press_1_1" SIGIS="undef" SIGNAME="External_Ports_press_1_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="press_1" PORT="press_1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="press_1_2" SIGIS="undef" SIGNAME="External_Ports_press_1_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="press_2" PORT="press_1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="press_1_3" SIGIS="undef" SIGNAME="External_Ports_press_1_3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="press_3" PORT="press_1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="light" RIGHT="0" SIGIS="undef" SIGNAME="light_0_light">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="light_0" PORT="light"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="EN" SIGIS="undef" SIGNAME="clk_0_EN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clk_0" PORT="EN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="choose" RIGHT="0" SIGIS="undef" SIGNAME="check_0_choose">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="check_0" PORT="choose"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="6" NAME="count_1" RIGHT="0" SIGIS="undef" SIGNAME="translate_1_count">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="translate_1" PORT="count"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="6" NAME="count" RIGHT="0" SIGIS="undef" SIGNAME="translate_0_count">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="translate_0" PORT="count"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clk_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="set" SIGIS="undef" SIGNAME="External_Ports_set">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rset_0" PORT="set_1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="set_1" SIGIS="undef" SIGNAME="External_Ports_set_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="creat_0" PORT="set"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/add_0" HWVERSION="1.0" INSTANCE="add_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="add" VLNV="xilinx.com:module_ref:add:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_add_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="warning_1" SIGIS="undef" SIGNAME="set_check_0_warning">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="set_check_0" PORT="warning"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="warning_2" SIGIS="undef" SIGNAME="timeless_0_warning_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="timeless_0" PORT="warning_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="warning" SIGIS="undef" SIGNAME="add_0_warning">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="light_0" PORT="warning"/>
+            <CONNECTION INSTANCE="timeless_0" PORT="warning"/>
+            <CONNECTION INSTANCE="set_check_0" PORT="judge"/>
+            <CONNECTION INSTANCE="clk_0" PORT="warning"/>
+            <CONNECTION INSTANCE="press_0" PORT="warning"/>
+            <CONNECTION INSTANCE="press_1" PORT="warning"/>
+            <CONNECTION INSTANCE="press_2" PORT="warning"/>
+            <CONNECTION INSTANCE="press_3" PORT="warning"/>
+            <CONNECTION INSTANCE="reset_0" PORT="warning"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/check_0" HWVERSION="1.0" INSTANCE="check_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="check" VLNV="xilinx.com:module_ref:check:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_check_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_0_clk_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_0" PORT="clk_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sure" SIGIS="undef" SIGNAME="creat_0_sure">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="creat_0" PORT="sure"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="num0" RIGHT="0" SIGIS="undef" SIGNAME="press_0_my">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="press_0" PORT="my"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="num1" RIGHT="0" SIGIS="undef" SIGNAME="press_1_my">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="press_1" PORT="my"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="num2" RIGHT="0" SIGIS="undef" SIGNAME="press_2_my">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="press_2" PORT="my"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="num3" RIGHT="0" SIGIS="undef" SIGNAME="press_3_my">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="press_3" PORT="my"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="count0" RIGHT="0" SIGIS="undef" SIGNAME="press_0_count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="press_0" PORT="count"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="count1" RIGHT="0" SIGIS="undef" SIGNAME="press_1_count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="press_1" PORT="count"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="count2" RIGHT="0" SIGIS="undef" SIGNAME="press_2_count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="press_2" PORT="count"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="count3" RIGHT="0" SIGIS="undef" SIGNAME="press_3_count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="press_3" PORT="count"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Out" RIGHT="0" SIGIS="undef" SIGNAME="check_0_Out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="translate_0" PORT="number"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="choose" RIGHT="0" SIGIS="undef" SIGNAME="check_0_choose">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="choose"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/clk_0" HWVERSION="1.0" INSTANCE="clk_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk" VLNV="xilinx.com:module_ref:clk:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="N" VALUE="100000"/>
+        <PARAMETER NAME="M" VALUE="1250"/>
+        <PARAMETER NAME="Z" VALUE="400"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_clk_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_1" SIGIS="undef" SIGNAME="clk_0_clk_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="check_0" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_3" SIGIS="undef" SIGNAME="clk_0_clk_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rejudge_0" PORT="clk_3"/>
+            <CONNECTION INSTANCE="rset_0" PORT="clk_3"/>
+            <CONNECTION INSTANCE="timeless_0" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_5" SIGIS="undef" SIGNAME="clk_0_clk_5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="light_0" PORT="clk_5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="timeless" RIGHT="0" SIGIS="undef" SIGNAME="clk_0_timeless">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="translate_1" PORT="number"/>
+            <CONNECTION INSTANCE="timeless_0" PORT="timeless"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="EN" SIGIS="undef" SIGNAME="clk_0_EN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="EN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="press0" SIGIS="undef" SIGNAME="press_0_press">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="press_0" PORT="press"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="press1" SIGIS="undef" SIGNAME="press_1_press">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="press_1" PORT="press"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="press2" SIGIS="undef" SIGNAME="press_2_press">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="press_2" PORT="press"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="press3" SIGIS="undef" SIGNAME="press_3_press">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="press_3" PORT="press"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="warning" SIGIS="undef" SIGNAME="add_0_warning">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="add_0" PORT="warning"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="lock" SIGIS="undef" SIGNAME="set_check_0_lock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="set_check_0" PORT="lock"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/creat_0" HWVERSION="1.0" INSTANCE="creat_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="creat" VLNV="xilinx.com:module_ref:creat:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_creat_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="set" SIGIS="undef" SIGNAME="External_Ports_set_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="set_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="num0" RIGHT="0" SIGIS="undef" SIGNAME="press_0_my">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="press_0" PORT="my"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="num1" RIGHT="0" SIGIS="undef" SIGNAME="press_1_my">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="press_1" PORT="my"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="num2" RIGHT="0" SIGIS="undef" SIGNAME="press_2_my">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="press_2" PORT="my"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="num3" RIGHT="0" SIGIS="undef" SIGNAME="press_3_my">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="press_3" PORT="my"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="my0" RIGHT="0" SIGIS="undef" SIGNAME="creat_0_my0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="set_check_0" PORT="my0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="my1" RIGHT="0" SIGIS="undef" SIGNAME="creat_0_my1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="set_check_0" PORT="my1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="my2" RIGHT="0" SIGIS="undef" SIGNAME="creat_0_my2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="set_check_0" PORT="my2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="my3" RIGHT="0" SIGIS="undef" SIGNAME="creat_0_my3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="set_check_0" PORT="my3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sure" SIGIS="undef" SIGNAME="creat_0_sure">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="check_0" PORT="sure"/>
+            <CONNECTION INSTANCE="set_check_0" PORT="sure"/>
+            <CONNECTION INSTANCE="press_0" PORT="sure"/>
+            <CONNECTION INSTANCE="press_1" PORT="sure"/>
+            <CONNECTION INSTANCE="press_2" PORT="sure"/>
+            <CONNECTION INSTANCE="press_3" PORT="sure"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/light_0" HWVERSION="1.0" INSTANCE="light_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="light" VLNV="xilinx.com:module_ref:light:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_light_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="warning" SIGIS="undef" SIGNAME="add_0_warning">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="add_0" PORT="warning"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="lock" SIGIS="undef" SIGNAME="set_check_0_lock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="set_check_0" PORT="lock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk_5" SIGIS="undef" SIGNAME="clk_0_clk_5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_0" PORT="clk_5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="light" RIGHT="0" SIGIS="undef" SIGNAME="light_0_light">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="light"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/press_0" HWVERSION="1.0" INSTANCE="press_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="press" VLNV="xilinx.com:module_ref:press:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_press_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="press_1" SIGIS="undef" SIGNAME="External_Ports_press_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="press_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="count" RIGHT="0" SIGIS="undef" SIGNAME="press_0_count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="check_0" PORT="count0"/>
+            <CONNECTION INSTANCE="set_check_0" PORT="count0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="my" RIGHT="0" SIGIS="undef" SIGNAME="press_0_my">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="check_0" PORT="num0"/>
+            <CONNECTION INSTANCE="creat_0" PORT="num0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="press" SIGIS="undef" SIGNAME="press_0_press">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_0" PORT="press0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sure" SIGIS="undef" SIGNAME="creat_0_sure">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="creat_0" PORT="sure"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="warning" SIGIS="undef" SIGNAME="add_0_warning">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="add_0" PORT="warning"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/press_1" HWVERSION="1.0" INSTANCE="press_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="press" VLNV="xilinx.com:module_ref:press:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_press_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="press_1" SIGIS="undef" SIGNAME="External_Ports_press_1_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="press_1_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="count" RIGHT="0" SIGIS="undef" SIGNAME="press_1_count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="check_0" PORT="count1"/>
+            <CONNECTION INSTANCE="set_check_0" PORT="count1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="my" RIGHT="0" SIGIS="undef" SIGNAME="press_1_my">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="check_0" PORT="num1"/>
+            <CONNECTION INSTANCE="creat_0" PORT="num1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="press" SIGIS="undef" SIGNAME="press_1_press">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_0" PORT="press1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sure" SIGIS="undef" SIGNAME="creat_0_sure">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="creat_0" PORT="sure"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="warning" SIGIS="undef" SIGNAME="add_0_warning">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="add_0" PORT="warning"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/press_2" HWVERSION="1.0" INSTANCE="press_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="press" VLNV="xilinx.com:module_ref:press:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_press_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="press_1" SIGIS="undef" SIGNAME="External_Ports_press_1_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="press_1_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="count" RIGHT="0" SIGIS="undef" SIGNAME="press_2_count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="check_0" PORT="count2"/>
+            <CONNECTION INSTANCE="set_check_0" PORT="count2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="my" RIGHT="0" SIGIS="undef" SIGNAME="press_2_my">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="check_0" PORT="num2"/>
+            <CONNECTION INSTANCE="creat_0" PORT="num2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="press" SIGIS="undef" SIGNAME="press_2_press">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_0" PORT="press2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sure" SIGIS="undef" SIGNAME="creat_0_sure">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="creat_0" PORT="sure"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="warning" SIGIS="undef" SIGNAME="add_0_warning">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="add_0" PORT="warning"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/press_3" HWVERSION="1.0" INSTANCE="press_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="press" VLNV="xilinx.com:module_ref:press:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_press_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="press_1" SIGIS="undef" SIGNAME="External_Ports_press_1_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="press_1_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="count" RIGHT="0" SIGIS="undef" SIGNAME="press_3_count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="check_0" PORT="count3"/>
+            <CONNECTION INSTANCE="set_check_0" PORT="count3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="my" RIGHT="0" SIGIS="undef" SIGNAME="press_3_my">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="check_0" PORT="num3"/>
+            <CONNECTION INSTANCE="creat_0" PORT="num3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="press" SIGIS="undef" SIGNAME="press_3_press">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_0" PORT="press3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sure" SIGIS="undef" SIGNAME="creat_0_sure">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="creat_0" PORT="sure"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="warning" SIGIS="undef" SIGNAME="add_0_warning">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="add_0" PORT="warning"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/rejudge_0" HWVERSION="1.0" INSTANCE="rejudge_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rejudge" VLNV="xilinx.com:module_ref:rejudge:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_rejudge_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_3" SIGIS="undef" SIGNAME="clk_0_clk_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_0" PORT="clk_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="judge_1" SIGIS="undef" SIGNAME="reset_0_judge">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reset_0" PORT="judge"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="judge" SIGIS="undef" SIGNAME="rejudge_0_judge">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rset_0" PORT="judge"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/reset_0" HWVERSION="1.0" INSTANCE="reset_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="reset" VLNV="xilinx.com:module_ref:reset:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_reset_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="warning" SIGIS="undef" SIGNAME="add_0_warning">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="add_0" PORT="warning"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="judge" SIGIS="undef" SIGNAME="reset_0_judge">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rejudge_0" PORT="judge_1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/rset_0" HWVERSION="1.0" INSTANCE="rset_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rset" VLNV="xilinx.com:module_ref:rset:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_rset_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="set_1" SIGIS="undef" SIGNAME="External_Ports_set">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="set"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk_3" SIGIS="undef" SIGNAME="clk_0_clk_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_0" PORT="clk_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="judge" SIGIS="undef" SIGNAME="rejudge_0_judge">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rejudge_0" PORT="judge"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="set" SIGIS="undef" SIGNAME="rset_0_set">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="timeless_0" PORT="set"/>
+            <CONNECTION INSTANCE="set_check_0" PORT="set"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/set_check_0" HWVERSION="1.0" INSTANCE="set_check_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="set_check" VLNV="xilinx.com:module_ref:set_check:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_set_check_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="count0" RIGHT="0" SIGIS="undef" SIGNAME="press_0_count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="press_0" PORT="count"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="count1" RIGHT="0" SIGIS="undef" SIGNAME="press_1_count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="press_1" PORT="count"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="count2" RIGHT="0" SIGIS="undef" SIGNAME="press_2_count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="press_2" PORT="count"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="count3" RIGHT="0" SIGIS="undef" SIGNAME="press_3_count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="press_3" PORT="count"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="my0" RIGHT="0" SIGIS="undef" SIGNAME="creat_0_my0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="creat_0" PORT="my0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="my1" RIGHT="0" SIGIS="undef" SIGNAME="creat_0_my1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="creat_0" PORT="my1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="my2" RIGHT="0" SIGIS="undef" SIGNAME="creat_0_my2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="creat_0" PORT="my2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="my3" RIGHT="0" SIGIS="undef" SIGNAME="creat_0_my3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="creat_0" PORT="my3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="judge" SIGIS="undef" SIGNAME="add_0_warning">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="add_0" PORT="warning"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="set" SIGIS="undef" SIGNAME="rset_0_set">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rset_0" PORT="set"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sure" SIGIS="undef" SIGNAME="creat_0_sure">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="creat_0" PORT="sure"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="lock" SIGIS="undef" SIGNAME="set_check_0_lock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="light_0" PORT="lock"/>
+            <CONNECTION INSTANCE="timeless_0" PORT="lock"/>
+            <CONNECTION INSTANCE="clk_0" PORT="lock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="warning" SIGIS="undef" SIGNAME="set_check_0_warning">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="add_0" PORT="warning_1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/timeless_0" HWVERSION="1.0" INSTANCE="timeless_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="timeless" VLNV="xilinx.com:module_ref:timeless:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_timeless_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_0_clk_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_0" PORT="clk_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="timeless" RIGHT="0" SIGIS="undef" SIGNAME="clk_0_timeless">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_0" PORT="timeless"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="lock" SIGIS="undef" SIGNAME="set_check_0_lock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="set_check_0" PORT="lock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="warning" SIGIS="undef" SIGNAME="add_0_warning">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="add_0" PORT="warning"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="warning_t" SIGIS="undef" SIGNAME="timeless_0_warning_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="add_0" PORT="warning_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="set" SIGIS="undef" SIGNAME="rset_0_set">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rset_0" PORT="set"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/translate_0" HWVERSION="1.0" INSTANCE="translate_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="translate" VLNV="xilinx.com:module_ref:translate:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_translate_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="number" RIGHT="0" SIGIS="undef" SIGNAME="check_0_Out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="check_0" PORT="Out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="6" NAME="count" RIGHT="0" SIGIS="undef" SIGNAME="translate_0_count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="count"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/translate_1" HWVERSION="1.0" INSTANCE="translate_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="translate" VLNV="xilinx.com:module_ref:translate:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_translate_1_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="number" RIGHT="0" SIGIS="undef" SIGNAME="clk_0_timeless">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_0" PORT="timeless"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="6" NAME="count" RIGHT="0" SIGIS="undef" SIGNAME="translate_1_count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="count_1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

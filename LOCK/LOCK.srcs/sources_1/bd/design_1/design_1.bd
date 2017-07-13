@@ -1,0 +1,584 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xE608D2E479128C79" bd:device="xc7a35tcsg324-3" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2017.1" bd:top="design_1" bd:version="1.00.a">
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>design_1</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:parameters>
+      <spirit:parameter>
+        <spirit:name>isTop</spirit:name>
+        <spirit:value spirit:format="bool" spirit:resolve="immediate">true</spirit:value>
+      </spirit:parameter>
+    </spirit:parameters>
+    <spirit:busInterfaces>
+      <spirit:busInterface>
+        <spirit:name>CLK.CLK</spirit:name>
+        <spirit:displayName>Clk</spirit:displayName>
+        <spirit:description>Clock</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="clock" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="clock_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>CLK</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>clk</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>FREQ_HZ</spirit:name>
+            <spirit:value>100000000</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="user"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>PHASE</spirit:name>
+            <spirit:value>0.000</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>CLK_DOMAIN</spirit:name>
+            <spirit:value>design_1_clk</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:busInterface>
+    </spirit:busInterfaces>
+    <spirit:model>
+      <spirit:views>
+        <spirit:view>
+          <spirit:name>BlockDiagram</spirit:name>
+          <spirit:envIdentifier>:vivado.xilinx.com:</spirit:envIdentifier>
+          <spirit:hierarchyRef spirit:library="BlockDiagram" spirit:name="design_1_imp" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        </spirit:view>
+      </spirit:views>
+      <spirit:ports>
+        <spirit:port>
+          <spirit:name>press_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>press_1_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>press_1_2</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>press_1_3</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>light</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>7</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>EN</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>choose</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>3</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>count_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>6</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>count</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>6</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>clk</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>set</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>set_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+      </spirit:ports>
+    </spirit:model>
+  </spirit:component>
+
+  <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>design_1_imp</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>translate_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="translate" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_translate_0_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">translate</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>translate_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="translate" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_translate_1_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">translate</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>rejudge_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="rejudge" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_rejudge_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">rejudge</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>check_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="check" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_check_0_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">check</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>rset_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="rset" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_rset_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">rset</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>light_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="light" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_light_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">light</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>creat_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="creat" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_creat_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">creat</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>add_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="add" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_add_0_2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">add</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>timeless_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="timeless" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_timeless_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">timeless</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>set_check_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="set_check" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_set_check_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">set_check</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>clk_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="clk" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_clk_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">clk</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>press_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="press" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_press_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">press</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>press_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="press" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_press_1_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">press</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>press_2</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="press" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_press_2_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">press</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>press_3</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="press" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_press_3_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">press</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>reset_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="reset" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_reset_0_2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">reset</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:adHocConnections>
+      <spirit:adHocConnection>
+        <spirit:name>press_1_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="press_1"/>
+        <spirit:internalPortReference spirit:componentRef="press_0" spirit:portRef="press_1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>press_1_1_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="press_1_1"/>
+        <spirit:internalPortReference spirit:componentRef="press_1" spirit:portRef="press_1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>press_1_2_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="press_1_2"/>
+        <spirit:internalPortReference spirit:componentRef="press_2" spirit:portRef="press_1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>press_1_3_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="press_1_3"/>
+        <spirit:internalPortReference spirit:componentRef="press_3" spirit:portRef="press_1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>set_check_0_lock</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="set_check_0" spirit:portRef="lock"/>
+        <spirit:internalPortReference spirit:componentRef="light_0" spirit:portRef="lock"/>
+        <spirit:internalPortReference spirit:componentRef="timeless_0" spirit:portRef="lock"/>
+        <spirit:internalPortReference spirit:componentRef="clk_0" spirit:portRef="lock"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>light_0_light</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="light_0" spirit:portRef="light"/>
+        <spirit:externalPortReference spirit:portRef="light"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_0_timeless</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="clk_0" spirit:portRef="timeless"/>
+        <spirit:internalPortReference spirit:componentRef="translate_1" spirit:portRef="number"/>
+        <spirit:internalPortReference spirit:componentRef="timeless_0" spirit:portRef="timeless"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>press_1_press</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="press_1" spirit:portRef="press"/>
+        <spirit:internalPortReference spirit:componentRef="clk_0" spirit:portRef="press1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>press_2_press</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="press_2" spirit:portRef="press"/>
+        <spirit:internalPortReference spirit:componentRef="clk_0" spirit:portRef="press2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>press_3_press</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="press_3" spirit:portRef="press"/>
+        <spirit:internalPortReference spirit:componentRef="clk_0" spirit:portRef="press3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>press_0_count</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="press_0" spirit:portRef="count"/>
+        <spirit:internalPortReference spirit:componentRef="check_0" spirit:portRef="count0"/>
+        <spirit:internalPortReference spirit:componentRef="set_check_0" spirit:portRef="count0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>press_2_count</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="press_2" spirit:portRef="count"/>
+        <spirit:internalPortReference spirit:componentRef="check_0" spirit:portRef="count2"/>
+        <spirit:internalPortReference spirit:componentRef="set_check_0" spirit:portRef="count2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_0_EN</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="clk_0" spirit:portRef="EN"/>
+        <spirit:externalPortReference spirit:portRef="EN"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>check_0_Out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="check_0" spirit:portRef="Out"/>
+        <spirit:internalPortReference spirit:componentRef="translate_0" spirit:portRef="number"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>check_0_choose</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="check_0" spirit:portRef="choose"/>
+        <spirit:externalPortReference spirit:portRef="choose"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>translate_1_count</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="translate_1" spirit:portRef="count"/>
+        <spirit:externalPortReference spirit:portRef="count_1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>translate_0_count</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="translate_0" spirit:portRef="count"/>
+        <spirit:externalPortReference spirit:portRef="count"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="clk_0" spirit:portRef="clk"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>press_1_count</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="press_1" spirit:portRef="count"/>
+        <spirit:internalPortReference spirit:componentRef="check_0" spirit:portRef="count1"/>
+        <spirit:internalPortReference spirit:componentRef="set_check_0" spirit:portRef="count1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>timeless_0_warning_t</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="timeless_0" spirit:portRef="warning_t"/>
+        <spirit:internalPortReference spirit:componentRef="add_0" spirit:portRef="warning_2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>add_0_warning</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="add_0" spirit:portRef="warning"/>
+        <spirit:internalPortReference spirit:componentRef="light_0" spirit:portRef="warning"/>
+        <spirit:internalPortReference spirit:componentRef="timeless_0" spirit:portRef="warning"/>
+        <spirit:internalPortReference spirit:componentRef="set_check_0" spirit:portRef="judge"/>
+        <spirit:internalPortReference spirit:componentRef="clk_0" spirit:portRef="warning"/>
+        <spirit:internalPortReference spirit:componentRef="press_0" spirit:portRef="warning"/>
+        <spirit:internalPortReference spirit:componentRef="press_1" spirit:portRef="warning"/>
+        <spirit:internalPortReference spirit:componentRef="press_2" spirit:portRef="warning"/>
+        <spirit:internalPortReference spirit:componentRef="press_3" spirit:portRef="warning"/>
+        <spirit:internalPortReference spirit:componentRef="reset_0" spirit:portRef="warning"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_0_clk_1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="clk_0" spirit:portRef="clk_1"/>
+        <spirit:internalPortReference spirit:componentRef="check_0" spirit:portRef="clk"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_0_clk_3</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="clk_0" spirit:portRef="clk_3"/>
+        <spirit:internalPortReference spirit:componentRef="rejudge_0" spirit:portRef="clk_3"/>
+        <spirit:internalPortReference spirit:componentRef="rset_0" spirit:portRef="clk_3"/>
+        <spirit:internalPortReference spirit:componentRef="timeless_0" spirit:portRef="clk"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>reset_0_judge</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="reset_0" spirit:portRef="judge"/>
+        <spirit:internalPortReference spirit:componentRef="rejudge_0" spirit:portRef="judge_1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>rejudge_0_judge</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="rejudge_0" spirit:portRef="judge"/>
+        <spirit:internalPortReference spirit:componentRef="rset_0" spirit:portRef="judge"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>set_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="set"/>
+        <spirit:internalPortReference spirit:componentRef="rset_0" spirit:portRef="set_1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>rset_0_set</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="rset_0" spirit:portRef="set"/>
+        <spirit:internalPortReference spirit:componentRef="timeless_0" spirit:portRef="set"/>
+        <spirit:internalPortReference spirit:componentRef="set_check_0" spirit:portRef="set"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_0_clk_5</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="clk_0" spirit:portRef="clk_5"/>
+        <spirit:internalPortReference spirit:componentRef="light_0" spirit:portRef="clk_5"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>set_1_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="set_1"/>
+        <spirit:internalPortReference spirit:componentRef="creat_0" spirit:portRef="set"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>press_0_my</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="press_0" spirit:portRef="my"/>
+        <spirit:internalPortReference spirit:componentRef="check_0" spirit:portRef="num0"/>
+        <spirit:internalPortReference spirit:componentRef="creat_0" spirit:portRef="num0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>press_0_press</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="press_0" spirit:portRef="press"/>
+        <spirit:internalPortReference spirit:componentRef="clk_0" spirit:portRef="press0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>press_1_my</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="press_1" spirit:portRef="my"/>
+        <spirit:internalPortReference spirit:componentRef="check_0" spirit:portRef="num1"/>
+        <spirit:internalPortReference spirit:componentRef="creat_0" spirit:portRef="num1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>press_2_my</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="press_2" spirit:portRef="my"/>
+        <spirit:internalPortReference spirit:componentRef="check_0" spirit:portRef="num2"/>
+        <spirit:internalPortReference spirit:componentRef="creat_0" spirit:portRef="num2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>press_3_count</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="press_3" spirit:portRef="count"/>
+        <spirit:internalPortReference spirit:componentRef="check_0" spirit:portRef="count3"/>
+        <spirit:internalPortReference spirit:componentRef="set_check_0" spirit:portRef="count3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>creat_0_sure</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="creat_0" spirit:portRef="sure"/>
+        <spirit:internalPortReference spirit:componentRef="check_0" spirit:portRef="sure"/>
+        <spirit:internalPortReference spirit:componentRef="set_check_0" spirit:portRef="sure"/>
+        <spirit:internalPortReference spirit:componentRef="press_0" spirit:portRef="sure"/>
+        <spirit:internalPortReference spirit:componentRef="press_1" spirit:portRef="sure"/>
+        <spirit:internalPortReference spirit:componentRef="press_2" spirit:portRef="sure"/>
+        <spirit:internalPortReference spirit:componentRef="press_3" spirit:portRef="sure"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>creat_0_my0</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="creat_0" spirit:portRef="my0"/>
+        <spirit:internalPortReference spirit:componentRef="set_check_0" spirit:portRef="my0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>creat_0_my1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="creat_0" spirit:portRef="my1"/>
+        <spirit:internalPortReference spirit:componentRef="set_check_0" spirit:portRef="my1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>creat_0_my2</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="creat_0" spirit:portRef="my2"/>
+        <spirit:internalPortReference spirit:componentRef="set_check_0" spirit:portRef="my2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>creat_0_my3</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="creat_0" spirit:portRef="my3"/>
+        <spirit:internalPortReference spirit:componentRef="set_check_0" spirit:portRef="my3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>press_3_my</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="press_3" spirit:portRef="my"/>
+        <spirit:internalPortReference spirit:componentRef="check_0" spirit:portRef="num3"/>
+        <spirit:internalPortReference spirit:componentRef="creat_0" spirit:portRef="num3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>set_check_0_warning</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="set_check_0" spirit:portRef="warning"/>
+        <spirit:internalPortReference spirit:componentRef="add_0" spirit:portRef="warning_1"/>
+      </spirit:adHocConnection>
+    </spirit:adHocConnections>
+  </spirit:design>
+
+</bd:repository>

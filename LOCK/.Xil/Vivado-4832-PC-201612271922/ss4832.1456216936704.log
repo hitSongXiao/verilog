@@ -1,0 +1,20 @@
+srcscan starts
+INFO: analyzing module clk (VERI-9002)
+C:/Users/Administrator/Desktop/LOCK/LOCK.srcs/sources_1/new/clk.v(39): WARNING: redeclaration of ansi port clk is not allowed (VERI-1372)
+C:/Users/Administrator/Desktop/LOCK/LOCK.srcs/sources_1/new/clk.v(39): WARNING: redeclaration of ansi port judge is not allowed (VERI-1372)
+C:/Users/Administrator/Desktop/LOCK/LOCK.srcs/sources_1/new/clk.v(40): WARNING: redeclaration of ansi port press0 is not allowed (VERI-1372)
+C:/Users/Administrator/Desktop/LOCK/LOCK.srcs/sources_1/new/clk.v(40): WARNING: redeclaration of ansi port press1 is not allowed (VERI-1372)
+C:/Users/Administrator/Desktop/LOCK/LOCK.srcs/sources_1/new/clk.v(40): WARNING: redeclaration of ansi port press2 is not allowed (VERI-1372)
+C:/Users/Administrator/Desktop/LOCK/LOCK.srcs/sources_1/new/clk.v(40): WARNING: redeclaration of ansi port press3 is not allowed (VERI-1372)
+C:/Users/Administrator/Desktop/LOCK/LOCK.srcs/sources_1/new/clk.v(41): WARNING: redeclaration of ansi port clk_1 is not allowed (VERI-1372)
+C:/Users/Administrator/Desktop/LOCK/LOCK.srcs/sources_1/new/clk.v(41): WARNING: redeclaration of ansi port clk_3 is not allowed (VERI-1372)
+C:/Users/Administrator/Desktop/LOCK/LOCK.srcs/sources_1/new/clk.v(41): WARNING: redeclaration of ansi port clk_4 is not allowed (VERI-1372)
+C:/Users/Administrator/Desktop/LOCK/LOCK.srcs/sources_1/new/clk.v(41): WARNING: redeclaration of ansi port clk_5 is not allowed (VERI-1372)
+C:/Users/Administrator/Desktop/LOCK/LOCK.srcs/sources_1/new/clk.v(42): WARNING: redeclaration of ansi port EN is not allowed (VERI-1372)
+C:/Users/Administrator/Desktop/LOCK/LOCK.srcs/sources_1/new/clk.v(47): WARNING: redeclaration of ansi port timeless is not allowed (VERI-1372)
+INFO: analyzing module design_1_clk_0_0 (VERI-9002)
+Listing tops:
+VeriTop library:xil_defaultlib mod:design_1_clk_0_0
+END of tops
+c:/Users/Administrator/Desktop/LOCK/LOCK.srcs/sources_1/bd/design_1/ip/design_1_clk_0_0/synth/design_1_clk_0_0.v(57): INFO: compiling module design_1_clk_0_0 (VERI-1018)
+srcscan exits with return value 0

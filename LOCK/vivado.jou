@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Wed Jun 28 10:47:38 2017
+# Process ID: 12640
+# Current directory: C:/Users/Administrator/Desktop/LOCK
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3060 C:\Users\Administrator\Desktop\LOCK\LOCK.xpr
+# Log file: C:/Users/Administrator/Desktop/LOCK/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/LOCK\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/LOCK/LOCK.xpr
+open_bd_design {C:/Users/Administrator/Desktop/LOCK/LOCK.srcs/sources_1/bd/design_1/design_1.bd}
+update_compile_order -fileset sources_1
+set_property location {2 415 409} [get_bd_cells creat_0]
+set_property location {5 1691 260} [get_bd_cells reset_0]
+set_property location {4 1344 266} [get_bd_cells set_check_0]
+set_property location {3 962 517} [get_bd_cells check_0]
+set_property location {2 354 603} [get_bd_cells check_0]
+set_property location {3.5 1182 679} [get_bd_cells translate_0]
+set_property location {5 1513 76} [get_bd_cells reset_0]
+set_property location {6.5 1964 284} [get_bd_cells light_0]
+set_property location {3 824 304} [get_bd_cells set_check_0]
+set_property location {5 1330 334} [get_bd_cells add_0]
+set_property location {5 1406 178} [get_bd_cells reset_0]
+set_property location {5 1429 490} [get_bd_cells rejudge_0]
+set_property location {5 1313 690} [get_bd_cells translate_0]
+set_property location {3 775 657} [get_bd_cells translate_0]
+set_property location {4 1438 70} [get_bd_cells rset_0]
+set_property location {4.5 1680 191} [get_bd_cells rejudge_0]
+set_property location {4 1361 496} [get_bd_cells light_0]
+set_property location {3.5 1112 85} [get_bd_cells translate_1]
+set_property location {1906 522} [get_bd_ports count]
+set_property location {1833 24} [get_bd_ports count]
+set_property location {1841 -53} [get_bd_ports count]
+set_property location {1725 -49} [get_bd_ports choose]
+set_property location {1677 -30} [get_bd_ports count_1]
+set_property location {1556 -50} [get_bd_ports EN]
+set_property location {1462 -84} [get_bd_ports light]
+set_property location {1562 -75} [get_bd_ports count]
+set_property location {1818 -64} [get_bd_ports count]
+set_property location {1408 -92} [get_bd_ports count_1]
+set_property location {1694 -59} [get_bd_ports light]
+save_bd_design
+write_bd_layout -format pdf -orientation portrait C:/Users/Administrator/Desktop/LOCK/LOCK.runs/impl_1/design_1.pdf
+write_bd_layout -format pdf -orientation portrait C:/Users/Administrator/Desktop/design_1.pdf
